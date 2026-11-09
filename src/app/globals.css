@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Surfaces & Canvas */
+    --canvas: 60 5% 98%;           /* #FAFAF9 - Warm serene background */
+    --surface: 0 0% 100%;          /* #FFFFFF - Pure card surface */
+    --surface-elevated: 60 5% 96%; /* #F5F5F4 - Dialogs, popovers */
+    --surface-subtle: 60 4% 93%;   /* #EFEFED - Inactive progress tracks */
+
+    /* Borders & Hairlines */
+    --border-subtle: 60 5% 90%;    /* #E7E5E4 - Quiet dividers */
+    --border-strong: 60 5% 83%;    /* #D6D3D1 - Card bounds, input strokes */
+    --border-focus: 152 40% 30%;   /* #2D6A4F - Focus ring indicator */
+
+    /* Typography Hierarchy */
+    --text-primary: 24 10% 10%;    /* #1C1917 - High contrast titles */
+    --text-secondary: 24 5% 33%;   /* #57534E - Subtitles, frequencies */
+    --text-tertiary: 24 5% 46%;    /* #78716C - Weekdays, micro metadata */
+    --text-muted: 24 6% 63%;       /* #A8A29E - Inactive placeholders */
+
+    /* Pulse Brand & Habit Semantic States */
+    --pulse-brand: 152 40% 30%;    /* #2D6A4F - Restorative Forest Sage */
+    --habit-done: 152 40% 30%;     /* #2D6A4F - Habit completed state */
+    --habit-done-bg: 145 35% 94%;  /* #E8F3ED - Subtle completed fill */
+    --habit-streak: 38 92% 44%;    /* #D97706 - Warm Ochre streak flame */
+    --habit-streak-bg: 48 96% 89%; /* #FEF3C7 - Subtle streak badge fill */
+    --habit-rest: 215 16% 47%;     /* #64748B - Rest / scheduled pause */
+    --habit-alert: 0 72% 41%;      /* #B91C1C - Dusky brick (non-punitive) */
+  }
+
+  .dark {
+    /* Surfaces & Canvas */
+    --canvas: 150 6% 5%;           /* #0C0E0D - Organic obsidian canvas */
+    --surface: 140 6% 9%;          /* #141715 - Deep stone card surface */
+    --surface-elevated: 140 7% 12%;/* #1C201D - Elevated modals & sheets */
+    --surface-subtle: 140 8% 15%;  /* #242A26 - Inactive wells */
+
+    /* Borders & Hairlines */
+    --border-subtle: 140 8% 14%;   /* #222824 - Soft separation lines */
+    --border-strong: 140 8% 21%;   /* #333C36 - Defined container edges */
+    --border-focus: 151 40% 52%;   /* #52B788 - Luminous focus ring */
+
+    /* Typography Hierarchy */
+    --text-primary: 120 5% 96%;    /* #F4F5F4 - Crisp legible white */
+    --text-secondary: 218 11% 65%; /* #9CA3AF - Balanced secondary text */
+    --text-tertiary: 220 9% 46%;   /* #6B7280 - Metadata and timestamps */
+    --text-muted: 217 10% 34%;     /* #4B5563 - Muted inactive text */
+
+    /* Pulse Brand & Habit Semantic States */
+    --pulse-brand: 151 40% 52%;    /* #52B788 - Luminous Mint Sage */
+    --habit-done: 151 39% 41%;     /* #40916C - Calming green check */
+    --habit-done-bg: 148 35% 12%;  /* #14291E - Deep moss completed fill */
+    --habit-streak: 38 92% 50%;    /* #F59E0B - Amber glow streak */
+    --habit-streak-bg: 35 60% 11%; /* #2A1D0B - Deep amber badge fill */
+    --habit-rest: 215 20% 65%;     /* #94A3B8 - Soft mist rest day */
+    --habit-alert: 0 91% 71%;      /* #F87171 - Gentle coral alert */
+  }
+
+  body {
+    background-color: hsl(var(--canvas));
+    color: hsl(var(--text-primary));
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
